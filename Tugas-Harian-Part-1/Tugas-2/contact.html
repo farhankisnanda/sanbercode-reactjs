@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #main {
+        border: 1px solid grey;
+        padding-left: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      p span {
+        font-weight: 900;
+      }
+
+      button {
+        margin: 10px 0;
+      }
+
+      #home a {
+        text-decoration: none;
+        color: black;
+      }
+
+      #home {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div>
+        <h1>Hubungi kami</h1>
+        <p><span>Kantor</span>: di jalan belum jadi</p>
+        <p><span>Nomor Telepon</span>: 08XX-XXXX-XXXX</p>
+        <p><span>Email:</span> email@contoh.com</p>
+      </div>
+      <div>
+        <h1>Kirimkan Pesan</h1>
+        <form action="#">
+          <table>
+            <tr>
+              <td><label for="nama">Nama</label></td>
+              <td><input type="text" name="nama" id="nama" /></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td><input type="email" name="email" id="email" /></td>
+            </tr>
+            <tr>
+              <td><label for="jenisKelamin">Jenis Kelamin:</label></td>
+              <td>
+                <input
+                  type="radio"
+                  name="jenisKelamin"
+                  id="laki-laki"
+                />Laki-Laki
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="jenisKelamin"
+                  id="perempuan"
+                />Perempuan
+              </td>
+            </tr>
+            <tr>
+              <td><label for="pesan">Pesan Anda</label></td>
+              <td>
+                <textarea
+                  name="pesan"
+                  id="pesan"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </div>
+    <button type="submit" id="home">
+      <a href="index.html">Kembali ke Index</a>
+    </button>
+  </body>
+</html>
